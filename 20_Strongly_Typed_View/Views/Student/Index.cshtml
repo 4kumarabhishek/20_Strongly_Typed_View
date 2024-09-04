@@ -1,0 +1,16 @@
+﻿@using _20_Strongly_Typed_View.Models
+@model Student
+
+@*Or we can also write like this
+@model _20_Strongly_Typed_View.Models.Student*@
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<hr />
+@Model.RollNo<br />
+@Model.Name<br />
+@Model.Address<br />
+@Model.Course<br />

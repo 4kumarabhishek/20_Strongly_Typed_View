@@ -1,0 +1,28 @@
+﻿@using _20_Strongly_Typed_View.Models
+
+@*Since we are using a collection of objects*@
+@model IEnumerable<Student>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<hr />
+<table border="1">
+    <tr>
+        <th>Roll No.</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Course</th>
+    </tr>
+    @foreach(Student s in Model)
+            {
+                <tr>
+                    <td>@s.RollNo</td>
+                    <td>@s.Name</td>
+                    <td>@s.Address</td>
+                    <td>@s.Course</td>
+                </tr>
+            }
+</table>
